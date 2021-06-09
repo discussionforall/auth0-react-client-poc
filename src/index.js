@@ -72,10 +72,13 @@ const App = () => {
             <h1>Hello from Client</h1>
             { !isAuthenticated && <button onClick={loginWithRedirect}>Login</button>}
             { isAuthenticated && <button onClick={logout}>Logout</button>}
+            <br />
             <hr />
             <hr />
+            <br />
             <button onClick={fetchPublicAPI}>Call Public API</button>
             Message From Public API: {messageOne}
+            <br />
             <br />
             <button onClick={fetchPrivateAPI}>Call Private API</button>
             Message from Private API: {messageTwo}
